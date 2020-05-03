@@ -21,7 +21,7 @@ class Primario extends Component {
                 <NavbarBrand href="/">Ristorante Con Fusion</NavbarBrand>
               </div>
             </Navbar>
-            <Menu />
+            <Menu dishes={ this.state.dishes }/>
           </div>
         );
     }
