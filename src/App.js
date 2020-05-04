@@ -1,11 +1,12 @@
 import React from 'react';
+import Main from './components/MainComponent';
 import './App.css';
-
-import Primario from './PrimarioComponent';
 
 function App() {
   return (
-    <Primario />
+    <div>
+      <Main />
+    </div>
   );
 }
 

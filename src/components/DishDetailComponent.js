@@ -28,7 +28,12 @@ class DishDetail extends Component {
             );
           });
           return(
-              comments
+              <div>
+                <h1>Commets</h1>
+                <ul>
+                  {comments}
+                </ul>
+              </div>
           );
       }
       else
@@ -40,16 +45,16 @@ class DishDetail extends Component {
 
   render() {
     return (
+      <div className="container">
         <div className="row">
           <div  className="col-12 col-md-5 m-1">
             {this.renderDish(this.props.selectedDish)}
           </div>
           <div  className="col-12 col-md-5 m-1">
-              <ul>
-                { this.renderComments(this.props.selectedDish) }
-              </ul>
+              {this.renderComments(this.props.selectedDish)}
           </div>
         </div>
+      </div>
     );
   }
 
